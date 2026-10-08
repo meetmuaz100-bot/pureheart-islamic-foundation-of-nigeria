@@ -1,0 +1,531 @@
+{
+  "name": "PureHeart Islamic Foundation of Nigeria",
+  "metadata": {
+    "tagline": "Faith, Leadership & Community — Lagos State Chapter",
+    "businessName": "PureHeart Islamic Foundation of Nigeria"
+  },
+  "globals": {
+    "footer": {
+      "id": "55ea6537-94a0-485c-abb8-1b932c8b6f4a",
+      "type": "footer",
+      "props": {
+        "legal": "© PureHeart Islamic Foundation of Nigeria, Lagos State Chapter. Secretariat: AB20 Federal Low Cost Housing Estate, Ikorodu, Lagos.",
+        "links": [
+          {
+            "href": "/",
+            "label": "Home"
+          },
+          {
+            "href": "/services",
+            "label": "Programmes"
+          },
+          {
+            "href": "/contact",
+            "label": "Contact"
+          }
+        ],
+        "social": [
+          {
+            "href": "mailto:info@pureheartfoundationng.org",
+            "label": "Email"
+          }
+        ],
+        "tagline": "Faith, Leadership & Community — Lagos State Chapter",
+        "logoText": "PureHeart Islamic Foundation"
+      },
+      "styles": {
+        "background": "surface"
+      },
+      "variant": "columns"
+    },
+    "header": {
+      "id": "48578cee-0844-4f20-81a4-7c30d74ec259",
+      "type": "navbar",
+      "props": {
+        "cta": {
+          "href": "#donate",
+          "label": "Donate Now"
+        },
+        "links": [],
+        "logoText": "PHF Lagos",
+        "logoImage": {
+          "alt": "",
+          "url": "",
+          "query": ""
+        }
+      },
+      "styles": {},
+      "variant": "simple"
+    }
+  },
+  "design": {
+    "colors": {
+      "dark": "#0b2422",
+      "text": "#102a27",
+      "muted": "#4b6360",
+      "accent": "#84CC16",
+      "border": "#dbe8e6",
+      "primary": "#6B21A8",
+      "surface": "#f0f7f6",
+      "darkText": "#fafaf9",
+      "background": "#ffffff",
+      "primaryText": "#ffffff"
+    },
+    "typography": {
+      "scale": 1,
+      "bodyFont": "Inter",
+      "headingCase": "none",
+      "headingFont": "Fraunces",
+      "headingWeight": 600
+    },
+    "spacing": {
+      "section": 104,
+      "container": 1200
+    },
+    "radius": {
+      "base": 18,
+      "button": 999
+    },
+    "shadows": {
+      "level": "soft"
+    }
+  },
+  "pages": [
+    {
+      "id": "f8e50af8-0ddc-42c3-a884-e7289d844d35",
+      "name": "Home",
+      "slug": "/",
+      "seo": {
+        "title": "PureHeart Islamic Foundation – Lagos State",
+        "description": "PHF Lagos empowers Muslim youth, students and women through leadership training, education and community outreach across 11 branches in Lagos State."
+      },
+      "sections": [
+        {
+          "id": "f00b7e44-4d99-4cf8-84b9-aaf1d8acd2ad",
+          "type": "hero",
+          "variant": "split",
+          "props": {
+            "image": {
+              "alt": "PHF Lagos members gathered at a community programme",
+              "url": "https://images.pexels.com/photos/33715422/pexels-photo-33715422.jpeg?auto=compress&cs=tinysrgb&w=1600",
+              "query": "Muslim community youth gathering Nigeria",
+              "credit": "Photo by snazzy  Photography on Pexels",
+              "creditUrl": "https://www.pexels.com/@snazzy-photography-2155042261"
+            },
+            "eyebrow": "Da'wah & Welfare",
+            "headline": "Nurturing Hearts, Building Communities",
+            "primaryCta": {
+              "href": "/services",
+              "label": "Explore Programmes"
+            },
+            "subheadline": "PureHeart Islamic Foundation empowers Muslim youth, students and women across Lagos through faith-centred leadership, education and community welfare.",
+            "secondaryCta": {
+              "href": "#branches",
+              "label": "Find Your Branch"
+            }
+          },
+          "styles": {}
+        },
+        {
+          "id": "b1ab7387-458b-4d19-aa55-1eb559e14e4b",
+          "type": "highlights",
+          "variant": "strip",
+          "props": {
+            "items": [
+              {
+                "text": "11 Active Branches Across Lagos"
+              },
+              {
+                "text": "6 Impactful Programmes"
+              },
+              {
+                "text": "1,000+ Lives Reached Yearly"
+              },
+              {
+                "text": "Faith-Centred Leadership"
+              },
+              {
+                "text": "Serving Youth, Students & Women"
+              }
+            ],
+            "heading": ""
+          },
+          "styles": {
+            "paddingY": "compact",
+            "background": "surface"
+          }
+        },
+        {
+          "id": "7bcbac2a-35fb-45e4-9d74-00446be018af",
+          "type": "features",
+          "variant": "imageCards",
+          "props": {
+            "intro": "From leadership camps to welfare initiatives, PHF Lagos runs six core programmes designed to develop character, strengthen faith and serve the community.",
+            "items": [
+              {
+                "icon": "award",
+                "image": {
+                  "alt": "Young Muslims participating in a leadership training session",
+                  "url": "https://images.pexels.com/photos/32711405/pexels-photo-32711405.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "Muslim youth leadership workshop Nigeria",
+                  "credit": "Photo by MD Photography on Pexels",
+                  "creditUrl": "https://www.pexels.com/@md-photography-2150970498"
+                },
+                "title": "Leadership Training Programme",
+                "description": "Equipping young Muslims with the skills, mindset and Islamic values needed to lead with integrity in their communities and beyond."
+              },
+              {
+                "icon": "users",
+                "image": {
+                  "alt": "Muslim sisters attending an educational seminar",
+                  "url": "https://images.pexels.com/photos/16385072/pexels-photo-16385072.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "Muslim women seminar conference Nigeria",
+                  "credit": "Photo by Mediahooch Pixels on Pexels",
+                  "creditUrl": "https://www.pexels.com/@mediahooch"
+                },
+                "title": "Annual Sisters Seminar",
+                "description": "A dedicated gathering for Muslim women and sisters to learn, connect and grow in faith, knowledge and personal development."
+              },
+              {
+                "icon": "star",
+                "image": {
+                  "alt": "Audience at the PHF Annual Accountability Summit",
+                  "url": "https://images.pexels.com/photos/14373430/pexels-photo-14373430.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "Islamic conference summit audience Nigeria",
+                  "credit": "Photo by Luis Quintero on Pexels",
+                  "creditUrl": "https://www.pexels.com/@jibarofoto"
+                },
+                "title": "Annual Accountability Summit",
+                "description": "An annual conference bringing together Muslim youth and community leaders to reflect, account and set purposeful goals grounded in Islamic values."
+              },
+              {
+                "icon": "heart",
+                "image": {
+                  "alt": "Volunteer distributing welfare supplies to girls",
+                  "url": "https://images.pexels.com/photos/9090746/pexels-photo-9090746.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "female welfare outreach Nigeria community",
+                  "credit": "Photo by Lagos Food Bank Initiative on Pexels",
+                  "creditUrl": "https://www.pexels.com/@lagosfoodbank"
+                },
+                "title": "Pad a Girl",
+                "description": "A welfare outreach initiative providing sanitary support to girls in need, promoting dignity, health and continued education."
+              },
+              {
+                "icon": "star",
+                "image": {
+                  "alt": "Students attending a PHF educational seminar",
+                  "url": "https://images.pexels.com/photos/5223333/pexels-photo-5223333.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "Islamic educational seminar students Nigeria",
+                  "credit": "Photo by Muhammad Adil on Pexels",
+                  "creditUrl": "https://www.pexels.com/@iniadil"
+                },
+                "title": "Educational Seminar",
+                "description": "Knowledge-sharing sessions that address relevant academic, spiritual and social topics to inform and empower Muslim students and youth."
+              },
+              {
+                "icon": "star",
+                "image": {
+                  "alt": "Young Muslims at the December Modelling Camp",
+                  "url": "https://images.pexels.com/photos/5661745/pexels-photo-5661745.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "Muslim youth camp modesty confidence training",
+                  "credit": "Photo by Ihsan Adityawarman on Pexels",
+                  "creditUrl": "https://www.pexels.com/@ihsanaditya"
+                },
+                "title": "December Modelling Camp",
+                "description": "An annual December camp focused on discipline, time management, presentation and modest confidence. Registration is through local branch coordinators."
+              }
+            ],
+            "eyebrow": "Our Programmes",
+            "heading": "What We Do"
+          },
+          "styles": {}
+        },
+        {
+          "id": "35cb27ee-261f-4e41-ba6e-79a1b35e6b45",
+          "type": "about",
+          "variant": "imageLeft",
+          "props": {
+            "cta": {
+              "href": "#branches",
+              "label": "Find Your Branch"
+            },
+            "body": "PureHeart Islamic Foundation of Nigeria (PHF), Lagos State Chapter, is a da'wah and welfare organisation dedicated to the holistic development of Muslim youth, students and women.\n\nThrough structured programmes, community outreach and a network of 11 active branches across Lagos, we work to raise principled leaders and strengthen the fabric of the Muslim community in Lagos State.",
+            "image": {
+              "alt": "PHF Lagos volunteers engaged in community outreach",
+              "url": "https://images.pexels.com/photos/34479480/pexels-photo-34479480.jpeg?auto=compress&cs=tinysrgb&w=1600",
+              "query": "Islamic community foundation Nigeria outreach",
+              "credit": "Photo by mk_photoz on Pexels",
+              "creditUrl": "https://www.pexels.com/@mk_photoz-2149411980"
+            },
+            "bullets": [
+              {
+                "text": "Faith-centred leadership development"
+              },
+              {
+                "text": "Educational empowerment for students"
+              },
+              {
+                "text": "Welfare support for women and girls"
+              },
+              {
+                "text": "11 branches connected across Lagos"
+              }
+            ],
+            "eyebrow": "About PHF Lagos",
+            "heading": "A Foundation Built on Faith and Service"
+          },
+          "styles": {
+            "background": "surface"
+          }
+        },
+        {
+          "id": "aae00f76-9199-4105-bb81-f09b3686351b",
+          "type": "steps",
+          "variant": "numbered",
+          "props": {
+            "intro": "Whether you want to attend a programme, volunteer your skills or support our work, getting involved with PHF Lagos is straightforward.",
+            "items": [
+              {
+                "title": "Find Your Local Branch",
+                "description": "Locate the PHF branch closest to you and connect directly with your branch coordinator via WhatsApp."
+              },
+              {
+                "title": "Attend a Programme",
+                "description": "Register for any of our six programmes through your branch coordinator or reach out to the secretariat for details."
+              },
+              {
+                "title": "Volunteer or Donate",
+                "description": "Offer your time across one of our six departments, or donate to support our welfare and da'wah work across Lagos."
+              }
+            ],
+            "eyebrow": "Get Involved",
+            "heading": "Three Ways to Join the PHF Community"
+          },
+          "styles": {}
+        },
+        {
+          "id": "8ab6677f-b545-4cc0-9ab2-df405939ca04",
+          "type": "stats",
+          "variant": "row",
+          "props": {
+            "items": [
+              {
+                "label": "Active Branches",
+                "value": "11"
+              },
+              {
+                "label": "Core Programmes",
+                "value": "6"
+              },
+              {
+                "label": "Lives Reached Yearly",
+                "value": "1,000+"
+              }
+            ],
+            "heading": "Our Reach in Lagos"
+          },
+          "styles": {
+            "hidden": false
+          }
+        },
+        {
+          "id": "f596c63c-4244-44a4-b061-eaff0ace12bc",
+          "type": "faq",
+          "variant": "accordion",
+          "props": {
+            "items": [
+              {
+                "answer": "We have 11 branches across Lagos including Ikorodu, Kosofe, Ikeja, Surulere, Ojo, Badagry, Isolo, Mushin, Alimosho and Apapa. Visit our Branches page to find your coordinator's WhatsApp contact.",
+                "question": "How do I find my nearest PHF branch?"
+              },
+              {
+                "answer": "Programme registration is handled through your local branch coordinator. Find your branch coordinator on the Branches page and reach out to them directly via WhatsApp.",
+                "question": "How can I register for a programme?"
+              },
+              {
+                "answer": "You can volunteer across six departments: Media & Publicity, Welfare & Outreach, Logistics & Events, Da'wah & Education, Finance & Sponsorship, and Sisters' Affairs. Use the Volunteer form on our website to indicate your interest and your message will be sent to the State Coordinator.",
+                "question": "How do I volunteer with PHF Lagos?"
+              },
+              {
+                "answer": "Donations are accepted via bank transfer to: Account Name – Pure Heart Islamic Foundation of Nigeria (PHF), Account No – 1100277183, Bank – Al-Barakah MFB. Please reach out to us after transferring so we can acknowledge your support.",
+                "question": "How do I donate to PHF Lagos?"
+              },
+              {
+                "answer": "The Annual December Modelling Camp is a camp focused on discipline, time management, presentation and modest confidence for Muslim youth. Registration is through local branch coordinators.",
+                "question": "What is the December Modelling Camp?"
+              }
+            ],
+            "eyebrow": "FAQ",
+            "heading": "Common Questions"
+          },
+          "styles": {
+            "background": "surface"
+          }
+        },
+        {
+          "id": "8a087025-96c1-4e53-96c7-a447672a2c32",
+          "type": "contact",
+          "variant": "split",
+          "props": {
+            "email": "info@pureheartfoundationng.org",
+            "hours": "",
+            "intro": "Have a question or want to get involved? Contact us through the details below or send us a message and we will respond as soon as possible.",
+            "phone": "+234 808 973 6080",
+            "address": "AB20 Federal Low Cost Housing Estate, Ikorodu, Lagos",
+            "eyebrow": "Contact Us",
+            "heading": "Reach Out to PHF Lagos",
+            "formAction": "",
+            "formEnabled": true,
+            "submitLabel": "Send Message"
+          },
+          "styles": {}
+        }
+      ]
+    },
+    {
+      "id": "7c547076-d147-4d82-9dfa-969f903c37ca",
+      "name": "Programmes",
+      "slug": "/services",
+      "seo": {
+        "title": "Our Programmes – PureHeart Islamic Foundation Lagos",
+        "description": "Explore PHF Lagos programmes: Leadership Training, Sisters Seminar, Accountability Summit, Pad a Girl, Educational Seminars and the December Modelling Camp."
+      },
+      "sections": [
+        {
+          "id": "b9efdabb-a783-4bcd-918b-c16b43f2e909",
+          "type": "features",
+          "variant": "imageCards",
+          "props": {
+            "intro": "PHF Lagos runs six structured programmes to develop leadership, promote education, support welfare and guide modest living among Muslim youth, students and women across Lagos.",
+            "items": [
+              {
+                "icon": "award",
+                "image": {
+                  "alt": "Young Muslims participating in a leadership training session",
+                  "url": "https://images.pexels.com/photos/20289752/pexels-photo-20289752.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "Muslim youth leadership workshop Nigeria",
+                  "credit": "Photo by AHMED ABUBAKAR BATURE on Pexels",
+                  "creditUrl": "https://www.pexels.com/@ahmed-abubakar-bature-463655216"
+                },
+                "title": "Leadership Training Programme",
+                "description": "Equipping young Muslims with the skills, mindset and Islamic values needed to lead with integrity in their communities and beyond."
+              },
+              {
+                "icon": "users",
+                "image": {
+                  "alt": "Muslim sisters attending an educational seminar",
+                  "url": "https://images.pexels.com/photos/10347161/pexels-photo-10347161.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "Muslim women seminar conference Nigeria",
+                  "credit": "Photo by Ron Lach on Pexels",
+                  "creditUrl": "https://www.pexels.com/@ron-lach"
+                },
+                "title": "Annual Sisters Seminar",
+                "description": "A dedicated gathering for Muslim women and sisters to learn, connect and grow in faith, knowledge and personal development."
+              },
+              {
+                "icon": "star",
+                "image": {
+                  "alt": "Audience at the PHF Annual Accountability Summit",
+                  "url": "https://images.pexels.com/photos/31584584/pexels-photo-31584584.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "Islamic conference summit audience Nigeria",
+                  "credit": "Photo by Mitchel  Onwuchuruba on Pexels",
+                  "creditUrl": "https://www.pexels.com/@mitchel-onwuchuruba-2148968906"
+                },
+                "title": "Annual Accountability Summit",
+                "description": "An annual conference bringing together Muslim youth and community leaders to reflect, account and set purposeful goals grounded in Islamic values."
+              },
+              {
+                "icon": "heart",
+                "image": {
+                  "alt": "Volunteer distributing welfare supplies to girls",
+                  "url": "https://images.pexels.com/photos/4483669/pexels-photo-4483669.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "female welfare outreach Nigeria community",
+                  "credit": "Photo by Denis Ngai on Pexels",
+                  "creditUrl": "https://www.pexels.com/@denis-ngai-2620907"
+                },
+                "title": "Pad a Girl",
+                "description": "A welfare outreach initiative providing sanitary support to girls in need, promoting dignity, health and continued education."
+              },
+              {
+                "icon": "star",
+                "image": {
+                  "alt": "Students attending a PHF educational seminar",
+                  "url": "https://images.pexels.com/photos/32711384/pexels-photo-32711384.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "Islamic educational seminar students Nigeria",
+                  "credit": "Photo by MD Photography on Pexels",
+                  "creditUrl": "https://www.pexels.com/@md-photography-2150970498"
+                },
+                "title": "Educational Seminar",
+                "description": "Knowledge-sharing sessions addressing academic, spiritual and social topics to inform and empower Muslim students and youth."
+              },
+              {
+                "icon": "star",
+                "image": {
+                  "alt": "Young Muslims at the December Modelling Camp",
+                  "url": "https://images.pexels.com/photos/32711402/pexels-photo-32711402.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                  "query": "Muslim youth camp modesty confidence training",
+                  "credit": "Photo by MD Photography on Pexels",
+                  "creditUrl": "https://www.pexels.com/@md-photography-2150970498"
+                },
+                "title": "December Modelling Camp",
+                "description": "An annual December camp focused on discipline, time management, presentation and modest confidence. Registration is through local branch coordinators."
+              }
+            ],
+            "eyebrow": "What We Do",
+            "heading": "Our Six Core Programmes"
+          },
+          "styles": {}
+        },
+        {
+          "id": "2c3dc563-bfbf-4744-ba6b-888f5f308c5c",
+          "type": "cta",
+          "variant": "banner",
+          "props": {
+            "body": "Connect with your nearest branch coordinator, register for a programme or support our work through a donation.",
+            "heading": "Ready to Get Involved?",
+            "primaryCta": {
+              "href": "/contact",
+              "label": "Find Your Branch"
+            },
+            "secondaryCta": {
+              "href": "/contact",
+              "label": "Donate Now"
+            }
+          },
+          "styles": {
+            "background": "primary"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cfa628b8-1aa7-481e-a03b-f33c910bf6ec",
+      "name": "Contact",
+      "slug": "/contact",
+      "seo": {
+        "title": "Contact PHF Lagos – PureHeart Islamic Foundation",
+        "description": "Reach PureHeart Islamic Foundation Lagos at our Ikorodu secretariat or call our coordinators. We are ready to connect you with your local branch."
+      },
+      "sections": [
+        {
+          "id": "1f87d67a-c6cb-4078-9fc4-f2e07e1b5d26",
+          "type": "contact",
+          "variant": "split",
+          "props": {
+            "email": "info@pureheartfoundationng.org",
+            "hours": "",
+            "intro": "Reach us at the secretariat or call any of our coordinators. We are happy to answer your questions and connect you with your local branch.",
+            "phone": "State Coordinator: +234 808 973 6080 | General Secretary: +234 813 288 4009 | AC I: +234 807 534 8020 | AC II: +234 803 066 0330 | AC III: +234 818 486 5755",
+            "address": "AB20 Federal Low Cost Housing Estate, Ikorodu, Lagos",
+            "eyebrow": "Contact",
+            "heading": "Get in Touch with PHF Lagos",
+            "formAction": "",
+            "formEnabled": true,
+            "submitLabel": "Send Message"
+          },
+          "styles": {}
+        }
+      ]
+    }
+  ]
+}

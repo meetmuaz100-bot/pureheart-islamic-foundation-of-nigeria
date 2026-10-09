@@ -106,11 +106,13 @@
           "variant": "split",
           "props": {
             "image": {
+              "url": "https://images.pexels.com/photos/32711405/pexels-photo-32711405.jpeg?auto=compress&cs=tinysrgb&w=1600",
               "alt": "PHF Lagos members gathered at a community programme",
-              "url": "https://images.pexels.com/photos/33715422/pexels-photo-33715422.jpeg?auto=compress&cs=tinysrgb&w=1600",
               "query": "Muslim community youth gathering Nigeria",
-              "credit": "Photo by snazzy  Photography on Pexels",
-              "creditUrl": "https://www.pexels.com/@snazzy-photography-2155042261"
+              "credit": "Photo by MD Photography on Pexels",
+              "creditUrl": "https://www.pexels.com/@md-photography-2150970498",
+              "focalX": 50,
+              "focalY": 50
             },
             "eyebrow": "Da'wah & Welfare",
             "headline": "Nurturing Hearts, Building Communities",

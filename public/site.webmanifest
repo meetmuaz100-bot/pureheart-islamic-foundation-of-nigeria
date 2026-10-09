@@ -1,0 +1,20 @@
+{
+  "name": "PureHeart Islamic Foundation of Nigeria",
+  "short_name": "PureHeart Is",
+  "icons": [
+    {
+      "src": "https://megeeujdberfkcjzwjfn.supabase.co/storage/v1/object/public/site-assets/3e271dd9-15f6-40f7-a59f-62295416bc09/e083ce08-bd97-498b-8256-7291bf5f54e6/brand/b68ad628-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://megeeujdberfkcjzwjfn.supabase.co/storage/v1/object/public/site-assets/3e271dd9-15f6-40f7-a59f-62295416bc09/e083ce08-bd97-498b-8256-7291bf5f54e6/brand/e385a52c-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#6B21A8",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "start_url": "."
+}

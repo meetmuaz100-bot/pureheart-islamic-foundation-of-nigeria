@@ -1,6 +1,6 @@
 import { Button, Img, Text } from '../edit';
 import { useResolveHref } from '../links';
-import type { LinkValue, Page } from '../types';
+import type { LinkValue, Page, SiteDoc } from '../types';
 import type { SectionProps } from './shared';
 
 function navLinks(links: LinkValue[] | undefined, pages: Page[]): LinkValue[] {
@@ -8,13 +8,30 @@ function navLinks(links: LinkValue[] | undefined, pages: Page[]): LinkValue[] {
   return pages.map((p) => ({ label: p.name, href: p.slug }));
 }
 
-function Logo({ props }: { props: SectionProps['section']['props'] }) {
+/**
+ * The site logo. A logo image set on the section wins; otherwise the brand
+ * logo kit is used, switching to the white version on dark sections.
+ */
+function Logo({ props, doc, scale = 1 }: { props: SectionProps['section']['props']; doc: SiteDoc; scale?: number }) {
   const href = useResolveHref();
-  return (
-    <a href={href('/')} className="wf-logo">
-      {props.logoImage?.url ? <Img path="logoImage" value={props.logoImage} className="wf-logo-img" /> : <Text path="logoText" value={props.logoText} />}
-    </a>
-  );
+  const brand = doc.metadata.brand;
+  const name = doc.metadata.businessName || props.logoText;
+  let content;
+  if (props.logoImage?.url) {
+    content = <Img path="logoImage" value={props.logoImage} className="wf-logo-img" />;
+  } else if (brand?.logo) {
+    const h = Math.round((brand.logoHeight || 40) * scale);
+    const w = Math.round((brand.width / brand.height) * h);
+    content = (
+      <span className="wf-brand-logo" style={{ height: h }}>
+        <img src={brand.logo} alt={name} width={w} height={h} className="wf-logo-on-light" />
+        <img src={brand.logoLight} alt={name} width={w} height={h} className="wf-logo-on-dark" />
+      </span>
+    );
+  } else {
+    content = <Text path="logoText" value={props.logoText} />;
+  }
+  return <a href={href('/')} className="wf-logo" aria-label={brand?.logo ? name : undefined}>{content}</a>;
 }
 
 export function Navbar({ section, doc, page }: SectionProps) {
@@ -29,7 +46,7 @@ export function Navbar({ section, doc, page }: SectionProps) {
   ));
   return (
     <div className="wf-container wf-nav-inner">
-      <Logo props={p} />
+      <Logo props={p} doc={doc} />
       <nav className="wf-nav-links" aria-label="Main">{linkEls}</nav>
       <div className="wf-nav-cta"><Button path="cta" value={p.cta} /></div>
       <details className="wf-nav-mobile">
@@ -55,7 +72,7 @@ export function Footer({ section, doc }: SectionProps) {
     <div className="wf-container">
       <div className="wf-footer-top">
         <div className="wf-footer-brand">
-          <a href={href('/')} className="wf-logo"><Text path="logoText" value={p.logoText} /></a>
+          <Logo props={p} doc={doc} scale={0.85} />
           <Text path="tagline" value={p.tagline} as="p" className="wf-muted" optional />
         </div>
         <nav className="wf-footer-links" aria-label="Footer">

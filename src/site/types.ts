@@ -88,11 +88,30 @@ export interface Page {
   sections: Section[];
 }
 
+/** Logo kit generated from an uploaded logo (URLs). */
+export interface BrandAssets {
+  /** Logo for light backgrounds. */
+  logo: string;
+  /** White logo for dark backgrounds. */
+  logoLight: string;
+  /** Black logo. */
+  logoDark: string;
+  /** Square icon (transparent). */
+  icon: string;
+  favicon: { ico: string; png32: string; apple: string; png192: string; png512: string };
+  width: number;
+  height: number;
+  colors: string[];
+  /** Header logo height in px. */
+  logoHeight: number;
+}
+
 export interface SiteMetadata {
   businessName: string;
   tagline?: string;
   siteUrl?: string;
   lang?: string;
+  brand?: BrandAssets;
 }
 
 export type CollectionFieldType = 'text' | 'textarea' | 'image' | 'link' | 'icon' | 'date';

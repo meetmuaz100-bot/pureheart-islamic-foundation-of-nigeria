@@ -2,7 +2,29 @@
   "name": "PureHeart Islamic Foundation of Nigeria",
   "metadata": {
     "tagline": "Faith, Leadership & Community — Lagos State Chapter",
-    "businessName": "PureHeart Islamic Foundation of Nigeria"
+    "businessName": "PureHeart Islamic Foundation of Nigeria",
+    "brand": {
+      "logo": "https://megeeujdberfkcjzwjfn.supabase.co/storage/v1/object/public/site-assets/3e271dd9-15f6-40f7-a59f-62295416bc09/e083ce08-bd97-498b-8256-7291bf5f54e6/brand/2148f215-logo.png",
+      "logoLight": "https://megeeujdberfkcjzwjfn.supabase.co/storage/v1/object/public/site-assets/3e271dd9-15f6-40f7-a59f-62295416bc09/e083ce08-bd97-498b-8256-7291bf5f54e6/brand/47b2936f-logo-white.png",
+      "logoDark": "https://megeeujdberfkcjzwjfn.supabase.co/storage/v1/object/public/site-assets/3e271dd9-15f6-40f7-a59f-62295416bc09/e083ce08-bd97-498b-8256-7291bf5f54e6/brand/4348a3fc-logo-black.png",
+      "icon": "https://megeeujdberfkcjzwjfn.supabase.co/storage/v1/object/public/site-assets/3e271dd9-15f6-40f7-a59f-62295416bc09/e083ce08-bd97-498b-8256-7291bf5f54e6/brand/c91c888e-icon.png",
+      "favicon": {
+        "ico": "https://megeeujdberfkcjzwjfn.supabase.co/storage/v1/object/public/site-assets/3e271dd9-15f6-40f7-a59f-62295416bc09/e083ce08-bd97-498b-8256-7291bf5f54e6/brand/95957e77-favicon.ico",
+        "png32": "https://megeeujdberfkcjzwjfn.supabase.co/storage/v1/object/public/site-assets/3e271dd9-15f6-40f7-a59f-62295416bc09/e083ce08-bd97-498b-8256-7291bf5f54e6/brand/9119c2ae-favicon-32.png",
+        "apple": "https://megeeujdberfkcjzwjfn.supabase.co/storage/v1/object/public/site-assets/3e271dd9-15f6-40f7-a59f-62295416bc09/e083ce08-bd97-498b-8256-7291bf5f54e6/brand/247d63c8-apple-touch-icon.png",
+        "png192": "https://megeeujdberfkcjzwjfn.supabase.co/storage/v1/object/public/site-assets/3e271dd9-15f6-40f7-a59f-62295416bc09/e083ce08-bd97-498b-8256-7291bf5f54e6/brand/b68ad628-icon-192.png",
+        "png512": "https://megeeujdberfkcjzwjfn.supabase.co/storage/v1/object/public/site-assets/3e271dd9-15f6-40f7-a59f-62295416bc09/e083ce08-bd97-498b-8256-7291bf5f54e6/brand/e385a52c-icon-512.png"
+      },
+      "width": 900,
+      "height": 890,
+      "colors": [
+        "#29176a",
+        "#655b86",
+        "#d72618",
+        "#8b85a7"
+      ],
+      "logoHeight": 40
+    }
   },
   "globals": {
     "footer": {

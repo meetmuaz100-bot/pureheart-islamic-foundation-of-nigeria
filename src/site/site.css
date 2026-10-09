@@ -90,6 +90,11 @@
 .wf-s-navbar { padding-block: 18px; border-bottom: 1px solid var(--wf-border); position: relative; z-index: 5; }
 .wf-nav-inner { display: flex; align-items: center; gap: 32px; }
 .wf-logo { font-size: 1.3rem; letter-spacing: -0.02em; white-space: nowrap; }
+.wf-brand-logo { display: inline-flex; align-items: center; }
+.wf-brand-logo img { height: 100%; width: auto; max-width: 260px; object-fit: contain; }
+.wf-logo-on-dark { display: none; }
+[data-tone='dark'] .wf-logo-on-light { display: none; }
+[data-tone='dark'] .wf-logo-on-dark { display: block; }
 .wf-logo-img { height: 36px; width: auto; background: none; }
 .wf-logo-img img { height: 36px; width: auto; object-fit: contain; }
 .wf-nav-links { display: flex; gap: 28px; margin-left: auto; font-size: 0.95rem; }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import data from './site.json';
+import { resolveRoute } from './site/content';
 import { SiteRenderer } from './site/SiteRenderer';
 import type { SiteDoc } from './site/types';
 
@@ -48,14 +49,19 @@ export default function App() {
     };
   }, []);
 
-  const page = doc.pages.find((p) => p.slug === path) ?? doc.pages[0];
+  // A page ("/about") or a blog post ("/blog/my-post").
+  const route = resolveRoute(doc, path);
+  const page = route.kind === 'page' ? route.page : doc.pages[0];
+  const post = route.kind === 'post' ? { collection: route.collection, entry: route.entry } : undefined;
+  const title = post ? post.entry.data.seoTitle || post.entry.title : page.seo.title || doc.metadata.businessName;
+  const description = post ? post.entry.data.seoDescription || post.entry.data.excerpt || '' : page.seo.description;
 
   useEffect(() => {
-    document.title = page.seo.title || doc.metadata.businessName;
-    setMeta('description', page.seo.description);
-    setMeta('og:title', document.title, 'property');
-    setMeta('og:description', page.seo.description, 'property');
-  }, [page]);
+    document.title = title;
+    setMeta('description', description);
+    setMeta('og:title', title, 'property');
+    setMeta('og:description', description, 'property');
+  }, [title, description]);
 
-  return <SiteRenderer doc={doc} page={page} basePath={BASE} />;
+  return <SiteRenderer doc={doc} page={page} post={post} basePath={BASE} />;
 }

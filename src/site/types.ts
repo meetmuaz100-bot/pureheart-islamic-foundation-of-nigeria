@@ -95,6 +95,45 @@ export interface SiteMetadata {
   lang?: string;
 }
 
+export type CollectionFieldType = 'text' | 'textarea' | 'image' | 'link' | 'icon' | 'date';
+
+export interface CollectionField {
+  key: string;
+  label: string;
+  type: CollectionFieldType;
+}
+
+export interface ContentEntry {
+  id: string;
+  title: string;
+  slug: string;
+  status: 'draft' | 'published';
+  data: Props;
+  /** Rich text HTML (blog posts). */
+  body: string;
+  position: number;
+  publishedAt: string | null;
+}
+
+export interface ContentCollection {
+  id: string;
+  name: string;
+  /** URL segment for blogs ("blog" -> /blog/<post-slug>). */
+  slug: string;
+  kind: 'blog' | 'custom';
+  preset: string | null;
+  fields: CollectionField[];
+  titleField: string;
+  entries: ContentEntry[];
+}
+
+/** A section shows a collection's entries instead of its inline cards. */
+export interface SectionSource {
+  collectionId: string;
+  limit?: number;
+  sort?: 'manual' | 'newest';
+}
+
 export interface SiteDoc {
   name: string;
   metadata: SiteMetadata;
@@ -104,4 +143,6 @@ export interface SiteDoc {
     footer: Section;
   };
   pages: Page[];
+  /** CMS content. Stored in its own tables; attached when rendering/exporting. */
+  content?: ContentCollection[];
 }

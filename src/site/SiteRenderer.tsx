@@ -1,15 +1,19 @@
 import type { ReactNode } from 'react';
+import { BlogPost } from './components/Content';
+import { resolveSection } from './content';
 import { LinkBase } from './links';
 import { REGISTRY } from './registry';
 import { sectionStyle, themeVars } from './theme';
-import type { Page, Section, SiteDoc } from './types';
+import type { ContentCollection, ContentEntry, Page, Section, SiteDoc } from './types';
 
 export interface RendererHooks {
   /** Wraps each rendered section, e.g. to add selection chrome in the editor. */
   wrapSection?: (section: Section, node: ReactNode, where: 'header' | 'page' | 'footer') => ReactNode;
 }
 
-export function SectionView({ section, doc, page, as = 'section' }: { section: Section; doc: SiteDoc; page?: Page; as?: 'section' | 'header' | 'footer' }) {
+export function SectionView({ section: raw, doc, page, as = 'section' }: { section: Section; doc: SiteDoc; page?: Page; as?: 'section' | 'header' | 'footer' }) {
+  // Sections bound to a CMS collection render the collection's entries.
+  const { section } = resolveSection(raw, doc);
   const Component = REGISTRY[section.type];
   if (!Component) return null;
   const { style, tone } = sectionStyle(section.styles ?? {}, doc.design);
@@ -32,8 +36,17 @@ function anchorFor(section: Section, page?: Page): string | undefined {
   return first?.id === section.id ? section.type : undefined;
 }
 
-/** basePath: where the site is served from, e.g. "/my-repo/" on GitHub Pages. */
-export function SiteRenderer({ doc, page, hooks, basePath = '/' }: { doc: SiteDoc; page: Page; hooks?: RendererHooks; basePath?: string }) {
+/**
+ * basePath: where the site is served from, e.g. "/my-repo/" on GitHub Pages.
+ * post: render a blog post page instead of `page`.
+ */
+export function SiteRenderer({ doc, page, post, hooks, basePath = '/' }: {
+  doc: SiteDoc;
+  page: Page;
+  post?: { collection: ContentCollection; entry: ContentEntry };
+  hooks?: RendererHooks;
+  basePath?: string;
+}) {
   const wrap = hooks?.wrapSection ?? ((_s: Section, n: ReactNode) => n);
   const { header, footer } = doc.globals;
   return (
@@ -41,7 +54,7 @@ export function SiteRenderer({ doc, page, hooks, basePath = '/' }: { doc: SiteDo
     <div className="wf-site" style={themeVars(doc.design)}>
       {!header.styles?.hidden && wrap(header, <SectionView section={header} doc={doc} page={page} as="header" />, 'header')}
       <main>
-        {page.sections.map((s) =>
+        {post ? <BlogPost doc={doc} collection={post.collection} entry={post.entry} /> : page.sections.map((s) =>
           s.styles?.hidden && !hooks ? null : (
             <div key={s.id} className={s.styles?.hidden ? 'wf-hidden-section' : undefined}>
               {wrap(s, <SectionView section={s} doc={doc} page={page} />, 'page')}

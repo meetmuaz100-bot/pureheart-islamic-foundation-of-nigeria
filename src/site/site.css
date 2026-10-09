@@ -274,6 +274,60 @@
 .wf-form button { margin-top: 16px; justify-self: start; }
 @container site (max-width: 820px) { .wf-contact { grid-template-columns: 1fr; } }
 
+/* Cards (collections: properties, projects, products) */
+.wf-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.wf-cards-list { display: grid; gap: 20px; }
+.wf-card { display: grid; border: 1px solid var(--wf-border); border-radius: var(--wf-radius); overflow: hidden; background: var(--wf-bg); align-content: start; }
+[data-tone='dark'] .wf-card { background: var(--wf-surface); }
+.wf-card-img { aspect-ratio: 4 / 3; border-radius: 0; }
+.wf-card-body { display: grid; gap: 8px; padding: 22px; align-content: start; }
+.wf-card-meta { font-size: .82rem; font-weight: 600; letter-spacing: .04em; color: var(--wf-accent); }
+.wf-card-link { justify-self: start; padding: 0; margin-top: 4px; color: var(--wf-primary); }
+.wf-cards-list .wf-card { grid-template-columns: minmax(180px, 34%) 1fr; }
+.wf-cards-list .wf-card-img { aspect-ratio: auto; height: 100%; min-height: 180px; }
+@container site (max-width: 900px) { .wf-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@container site (max-width: 600px) { .wf-cards { grid-template-columns: 1fr; } .wf-cards-list .wf-card { grid-template-columns: 1fr; } }
+
+/* Blog */
+.wf-posts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.wf-posts-list { display: grid; gap: 0; }
+.wf-post-card { position: relative; display: grid; gap: 14px; align-content: start; }
+.wf-post-card-link { position: absolute; inset: 0; z-index: 1; }
+.wf-post-card:hover .wf-h3 { text-decoration: underline; text-underline-offset: 3px; }
+.wf-post-cover { aspect-ratio: 16 / 10; }
+.wf-post-body { display: grid; gap: 8px; }
+.wf-posts-list .wf-post-card { padding-block: 24px; border-top: 1px solid var(--wf-border); grid-template-columns: 220px 1fr; gap: 24px; }
+.wf-posts-list .wf-post-card:not(:has(.wf-post-cover)) { grid-template-columns: 1fr; }
+.wf-empty-note { padding: 24px; border: 1px dashed var(--wf-border); border-radius: var(--wf-radius); text-align: center; }
+@container site (max-width: 900px) { .wf-posts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@container site (max-width: 600px) { .wf-posts { grid-template-columns: 1fr; } .wf-posts-list .wf-post-card { grid-template-columns: 1fr; } }
+
+.wf-post { background: var(--wf-bg); padding-block: calc(var(--wf-section-y) * 0.7) var(--wf-section-y); }
+.wf-post-container { max-width: 760px; display: grid; gap: 16px; }
+.wf-post-back { font-size: .9rem; color: var(--wf-muted); }
+.wf-post-back:hover { color: var(--wf-text); }
+.wf-post-title { font-size: calc(clamp(2.1rem, 5cqi, 3.4rem) * var(--wf-scale)); }
+.wf-post-cover-wrap { max-width: 1000px; margin-block: 32px; }
+.wf-post-container + .wf-post-container { margin-top: 32px; }
+.wf-post-hero { aspect-ratio: 16 / 8; }
+.wf-prose { font-size: 1.08rem; line-height: 1.75; color: var(--wf-text); }
+.wf-prose > * + * { margin-top: 1.1em; }
+.wf-prose :where(h2, h3) { font-family: var(--wf-font-heading); font-weight: var(--wf-heading-weight); line-height: 1.25; margin-top: 1.8em; }
+.wf-prose h2 { font-size: 1.65em; }
+.wf-prose h3 { font-size: 1.3em; }
+.wf-prose :where(ul, ol) { padding-left: 1.4em; }
+.wf-prose ul { list-style: disc; }
+.wf-prose ol { list-style: decimal; }
+.wf-prose li + li { margin-top: .35em; }
+.wf-prose a { color: var(--wf-primary); text-decoration: underline; text-underline-offset: 3px; }
+.wf-prose blockquote { border-left: 3px solid var(--wf-accent); padding-left: 1.1em; color: var(--wf-muted); font-style: italic; }
+.wf-prose img { border-radius: var(--wf-radius); margin-block: 1.6em; width: 100%; height: auto; }
+.wf-prose code { background: var(--wf-surface); padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+.wf-prose pre { background: var(--wf-surface); padding: 1em; border-radius: var(--wf-radius); overflow-x: auto; }
+.wf-prose hr { border: 0; border-top: 1px solid var(--wf-border); margin-block: 2em; }
+.wf-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.wf-tags li { font-size: .85rem; padding: 4px 12px; border-radius: 999px; background: var(--wf-surface); color: var(--wf-muted); }
+
 /* Footer */
 .wf-s-footer { padding-block: 64px 32px; border-top: 1px solid var(--wf-border); }
 .wf-footer-top { display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; }

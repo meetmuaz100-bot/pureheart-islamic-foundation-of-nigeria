@@ -11,6 +11,8 @@ export interface EditApi {
   sectionId: string;
   setText: (path: string, value: string) => void;
   pickImage: (path: string) => void;
+  /** Paths that can't be edited inline (e.g. cards that come from a CMS collection). */
+  isLocked?: (path: string) => boolean;
 }
 
 export const EditContext = createContext<EditApi | null>(null);
@@ -30,7 +32,8 @@ interface TextProps {
 }
 
 export function Text({ path, value, as: Tag = 'span', className, optional, placeholder }: TextProps) {
-  const edit = useEdit();
+  const ctx = useEdit();
+  const edit = ctx?.isLocked?.(path) ? null : ctx;
   if (!edit) {
     if (optional && !value) return null;
     return <Tag className={className}>{value}</Tag>;
@@ -57,7 +60,8 @@ export function Text({ path, value, as: Tag = 'span', className, optional, place
 
 /** Paragraph text: blank lines become separate <p> elements. */
 export function Paragraphs({ path, value, className }: { path: string; value?: string; className?: string }) {
-  const edit = useEdit();
+  const ctx = useEdit();
+  const edit = ctx?.isLocked?.(path) ? null : ctx;
   if (edit) return <Text path={path} value={value} as="div" className={`${className ?? ''} wf-prewrap`} />;
   if (!value) return null;
   return (
@@ -68,7 +72,8 @@ export function Paragraphs({ path, value, className }: { path: string; value?: s
 }
 
 export function Img({ path, value, className, sizes }: { path: string; value?: ImageValue; className?: string; sizes?: string }) {
-  const edit = useEdit();
+  const ctx = useEdit();
+  const edit = !path || ctx?.isLocked?.(path) ? null : ctx;
   const pos = value ? `${value.focalX ?? 50}% ${value.focalY ?? 50}%` : undefined;
   const content = value?.url ? (
     <img src={value.url} alt={value.alt ?? ''} loading="lazy" decoding="async" sizes={sizes} style={{ objectPosition: pos }} />

@@ -1,4 +1,5 @@
 import type { ComponentType } from 'react';
+import { BlogList, Cards } from './components/Content';
 import { Footer, Navbar } from './components/Globals';
 import {
   About, Contact, Content, Cta, Faq, Features, Gallery, Hero, Highlights, Menu, Pricing, Stats, Steps, Team, Testimonials,
@@ -22,6 +23,8 @@ export const REGISTRY: Record<string, ComponentType<SectionProps>> = {
   gallery: Gallery,
   menu: Menu,
   content: Content,
+  cards: Cards,
+  blogList: BlogList,
   cta: Cta,
   contact: Contact,
 };

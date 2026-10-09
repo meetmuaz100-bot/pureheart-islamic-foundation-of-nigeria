@@ -526,6 +526,94 @@
           "styles": {}
         }
       ]
+    },
+    {
+      "id": "afd1a599-bed9-4398-8ee2-8f08e99aa8dc",
+      "name": "Blog",
+      "slug": "/blog",
+      "seo": {
+        "title": "Blog",
+        "description": ""
+      },
+      "sections": [
+        {
+          "id": "13a1ffa6-2bd3-4322-9fa3-a65bcab997b5",
+          "type": "blogList",
+          "variant": "grid",
+          "props": {
+            "intro": "",
+            "posts": [],
+            "eyebrow": "",
+            "heading": "Blog"
+          },
+          "styles": {}
+        }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "fc60414e-f348-44a6-add4-4765e2a1c47c",
+      "name": "Blog",
+      "slug": "blog",
+      "kind": "blog",
+      "preset": "blog",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "excerpt",
+          "type": "textarea",
+          "label": "Excerpt"
+        },
+        {
+          "key": "cover",
+          "type": "image",
+          "label": "Cover image"
+        },
+        {
+          "key": "author",
+          "type": "text",
+          "label": "Author"
+        },
+        {
+          "key": "tags",
+          "type": "text",
+          "label": "Tags (comma separated)"
+        }
+      ],
+      "titleField": "title",
+      "entries": [
+        {
+          "id": "2ad1d1bb-a372-48cd-a111-55ca76c53215",
+          "title": "How clean water changed school attendance in Ikorodu",
+          "slug": "how-clean-water-changed-school-attendance-in-ikorodu",
+          "status": "published",
+          "data": {
+            "tags": "clean water, education, community, Lagos",
+            "cover": {
+              "alt": "A bustling aerial view of Lagos, Nigeria showcasing dense urban architecture and busy traffic.",
+              "url": "https://images.pexels.com/photos/36622171/pexels-photo-36622171.jpeg?auto=compress&cs=tinysrgb&w=1600",
+              "query": "ikorodu",
+              "credit": "Photo by Taiwo Samson on Pexels",
+              "focalX": 50,
+              "focalY": 50,
+              "creditUrl": "https://www.pexels.com/@taiwo-samson-1239982962"
+            },
+            "title": "How clean water changed school attendance in Ikorodu",
+            "author": "Amaka Obi, Programmes Lead",
+            "excerpt": "When the nearest borehole is 3 km away, girls miss school to fetch water. Here’s what happened when we brought water to the school gate.",
+            "seoTitle": "Clean water and school attendance in Ikorodu | HopeBridge Foundation",
+            "seoDescription": "How a single borehole helped keep more girls in school in Ikorodu, Lagos, and how you can help us reach the next community."
+          },
+          "body": "<p>For many families on the edge of Ikorodu, the day starts with a walk. Before school, before breakfast, someone has to fetch water, and that someone is usually a girl.</p><p><strong>The problem</strong></p><p>At Ebute Community Primary School, the nearest safe water point was a 40-minute walk away. Teachers told us that on many mornings, a third of the girls in Primary 5 arrived late or not at all.</p><ul><li><p>Children walked up to 3 km each way to collect water</p></li><li><p>The school had no water for handwashing or toilets</p></li><li><p>Diarrhoea and stomach illness were a common reason for absence</p></li></ul><p><strong>What we did</strong></p><p>Working with the school’s parent–teacher association and local leaders, we installed a solar-powered borehole and three handwashing stations at the school gate. Parents formed a water committee to manage maintenance and keep the area clean.</p><p><strong>What changed</strong></p><p>Within one term, teachers reported that morning lateness dropped noticeably, and fewer children were sent home sick. More importantly, girls who used to spend their mornings carrying water were now in class.</p><blockquote><p>“My daughter used to cry because she was always late. Now she is the first one at school.” — a parent at Ebute</p></blockquote><p><strong>What’s next</strong></p><p>There are four more schools in the area without safe water. Each borehole costs about ₦4.5 million to install, and the community commits to maintaining it.</p><p><strong>How you can help</strong></p><p>You can sponsor a handwashing station, fund part of a borehole, or volunteer with our community health team. Every contribution goes directly to the next school on our list.<br></p>",
+          "position": 0,
+          "publishedAt": "2026-10-09T17:15:56.108+00:00"
+        }
+      ]
     }
   ]
 }

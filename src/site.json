@@ -179,11 +179,13 @@
               {
                 "icon": "users",
                 "image": {
+                  "url": "https://images.pexels.com/photos/10347161/pexels-photo-10347161.jpeg?auto=compress&cs=tinysrgb&w=1600",
                   "alt": "Muslim sisters attending an educational seminar",
-                  "url": "https://images.pexels.com/photos/16385072/pexels-photo-16385072.jpeg?auto=compress&cs=tinysrgb&w=1600",
                   "query": "Muslim women seminar conference Nigeria",
-                  "credit": "Photo by Mediahooch Pixels on Pexels",
-                  "creditUrl": "https://www.pexels.com/@mediahooch"
+                  "credit": "Photo by Ron Lach on Pexels",
+                  "creditUrl": "https://www.pexels.com/@ron-lach",
+                  "focalX": 50,
+                  "focalY": 50
                 },
                 "title": "Annual Sisters Seminar",
                 "description": "A dedicated gathering for Muslim women and sisters to learn, connect and grow in faith, knowledge and personal development."
@@ -191,11 +193,13 @@
               {
                 "icon": "star",
                 "image": {
+                  "url": "https://images.pexels.com/photos/34398676/pexels-photo-34398676.jpeg?auto=compress&cs=tinysrgb&w=1600",
                   "alt": "Audience at the PHF Annual Accountability Summit",
-                  "url": "https://images.pexels.com/photos/14373430/pexels-photo-14373430.jpeg?auto=compress&cs=tinysrgb&w=1600",
                   "query": "Islamic conference summit audience Nigeria",
-                  "credit": "Photo by Luis Quintero on Pexels",
-                  "creditUrl": "https://www.pexels.com/@jibarofoto"
+                  "credit": "Photo by Ezeguna_graphy Sulaiman muhammad on Pexels",
+                  "creditUrl": "https://www.pexels.com/@ezeguna_graphy-sulaiman-muhammad-2153324075",
+                  "focalX": 50,
+                  "focalY": 50
                 },
                 "title": "Annual Accountability Summit",
                 "description": "An annual conference bringing together Muslim youth and community leaders to reflect, account and set purposeful goals grounded in Islamic values."
@@ -215,11 +219,13 @@
               {
                 "icon": "star",
                 "image": {
+                  "url": "https://images.pexels.com/photos/36036163/pexels-photo-36036163.jpeg?auto=compress&cs=tinysrgb&w=1600",
                   "alt": "Students attending a PHF educational seminar",
-                  "url": "https://images.pexels.com/photos/5223333/pexels-photo-5223333.jpeg?auto=compress&cs=tinysrgb&w=1600",
                   "query": "Islamic educational seminar students Nigeria",
-                  "credit": "Photo by Muhammad Adil on Pexels",
-                  "creditUrl": "https://www.pexels.com/@iniadil"
+                  "credit": "Photo by Richard Mwakalindile on Pexels",
+                  "creditUrl": "https://www.pexels.com/@richard-mwakalindile-2159415132",
+                  "focalX": 50,
+                  "focalY": 50
                 },
                 "title": "Educational Seminar",
                 "description": "Knowledge-sharing sessions that address relevant academic, spiritual and social topics to inform and empower Muslim students and youth."
@@ -227,11 +233,13 @@
               {
                 "icon": "star",
                 "image": {
+                  "url": "https://images.pexels.com/photos/32618053/pexels-photo-32618053.jpeg?auto=compress&cs=tinysrgb&w=1600",
                   "alt": "Young Muslims at the December Modelling Camp",
-                  "url": "https://images.pexels.com/photos/5661745/pexels-photo-5661745.jpeg?auto=compress&cs=tinysrgb&w=1600",
                   "query": "Muslim youth camp modesty confidence training",
-                  "credit": "Photo by Ihsan Adityawarman on Pexels",
-                  "creditUrl": "https://www.pexels.com/@ihsanaditya"
+                  "credit": "Photo by Abdulkadir muhammad sani on Pexels",
+                  "creditUrl": "https://www.pexels.com/@abdulkadir-muhammad-sani-2150944758",
+                  "focalX": 50,
+                  "focalY": 50
                 },
                 "title": "December Modelling Camp",
                 "description": "An annual December camp focused on discipline, time management, presentation and modest confidence. Registration is through local branch coordinators."
